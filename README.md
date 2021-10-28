@@ -1,7 +1,7 @@
 # macOS and OpenCore Quick Reference Guide
 These are some of my go-to macOS and OpenCore commands, guides, fixes and features I use from time to time in my environment. They act as my quick-reference guide and checklist whenever I need to do any updates, debugging or previous fixes and features I lost.
 
-## Updating OpenCore
+### Updating OpenCore
 <details>
   <summary>Quick guide on how to update OpenCore.</summary>
   <br>
@@ -40,7 +40,7 @@ These are some of my go-to macOS and OpenCore commands, guides, fixes and featur
   <br>
 </details>
 
-## Disable or enable Gatekeeper
+### Disable or enable Gatekeeper
 <details>
   <summary>Terminal commands to disable, enable or check status on Gatekeeper.</summary>
   <br>
@@ -64,7 +64,7 @@ These are some of my go-to macOS and OpenCore commands, guides, fixes and featur
   <br>
 </details>
 
-## Disable or enable SIP
+### Disable or enable SIP
 <details>
   <summary>Terminal commands to disable, enable or check status on SIP (System Integrity Protection).</summary>
   <br>
@@ -96,7 +96,7 @@ These are some of my go-to macOS and OpenCore commands, guides, fixes and featur
   <br>
 </details>
 
-## Remove delay on Dock autohide
+### Remove delay on Dock autohide
 <details>
   <summary>Terminal commands to remove or restore the Dock autohide delay.</summary>
   <br>
@@ -114,7 +114,7 @@ These are some of my go-to macOS and OpenCore commands, guides, fixes and featur
   <br>
 </details>
 
-## Reset all Finder views
+### Reset all Finder views
 <details>
   <summary>Terminal commands to reset all Finder views for either one or all users.</summary>
   <br>
@@ -123,7 +123,7 @@ These are some of my go-to macOS and OpenCore commands, guides, fixes and featur
   <br>
 </details>
 
-## Fix localized system folders
+### Fix localized system folders
 <details>
   <summary>Terminal commands to localize system folder that has not been translated correctly.</summary>
   <br>
@@ -132,7 +132,7 @@ These are some of my go-to macOS and OpenCore commands, guides, fixes and featur
   <br>
 </details>
 
-## Enable HiDPI on a non-retina display
+### Enable HiDPI on a non-retina display
 <details>
   <summary>Script to simulate macOS HiDPI on a non-retina display, and have a "native" scaled in System Preferences.</summary>
   <br>
@@ -166,7 +166,7 @@ These are some of my go-to macOS and OpenCore commands, guides, fixes and featur
   <br>
 </details>
 
-## Prevent a volume from mounting at startup
+### Prevent a volume from mounting at startup
 <details>
   <summary>Terminal commands to prevent volumes from mounting at startup.</summary>
   <br>
