@@ -3,7 +3,7 @@ These are some of my go-to macOS and OpenCore commands, guides, fixes and featur
 
 ## Updating OpenCore
 <details>
-  <summary>Condensed guide on how to update OpenCore.</summary>
+  <summary>Quick guide on how to update OpenCore.</summary>
   <br>
 
   Workinonit..
@@ -13,13 +13,28 @@ These are some of my go-to macOS and OpenCore commands, guides, fixes and featur
   <br>
 </details>
 
-## Debugging OpenCore
+### Debugging OpenCore
 <details>
-  <summary>Condensed guide on how to debug OpenCore.</summary>
+  <summary>Quick guide on how to debug OpenCore with my releases.</summary>
   <br>
 
-  Workinonit..
-  <br>
+  My releases are prepared for easy dubugging, all you have to do is download the DEBUG version of [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg). Reminder, it's a good idea booting the debug EFI from a USB stick.
+  
+  **Swap the following files:**
+
+  EFI > BOOT > `BOOTx64.efi`<br>
+  EFI > OC > `OpenCore.efi`<br>
+  EFI > OC > Drivers > `OpenRuntime.efi`
+
+  **Change to the following values in** `config.plist`**:**
+
+  Misc > Debug > AppleDebug > `True`<br>
+  Misc > Debug > ApplePanic > `True`<br>
+  Misc > Debug > DisableWatchDog > `True`<br>
+  Misc > Debug > Target > `67`<br>
+  NVRAM > Add > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > boot-args > `-v keepsyms=1`
+
+  Restart computer and make sure you boot from the same volume you made the changes in. Verbose mode is now active and log files will be saved to the same volume. When you're done and everything works, swap back files from the RELEASE version and revert the values in config.plist.
 
   <sup>***Reference: https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html***</sup>
   <br>
