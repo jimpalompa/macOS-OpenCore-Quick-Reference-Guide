@@ -132,6 +132,24 @@ These are some of my go-to macOS and OpenCore commands, guides, fixes and featur
   <br>
 </details>
 
+### Always open TextEdit with new document
+<details>
+  <summary>Terminal commands to start TextEdit with a new document by default.</summary>
+  <br>
+
+  **Always open TextEdit with a new document**
+  ```
+  defaults write -g NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
+  ```
+  <br>
+
+  **Restore to TextEdit default settings**
+  ```
+  defaults delete -g NSShowAppCentricOpenPanelInsteadOfUntitledFile
+  ```
+  <br>
+</details>
+
 ### Enable HiDPI on a non-retina display
 <details>
   <summary>Script to simulate macOS HiDPI on a non-retina display, and have a "native" scaled in System Preferences.</summary>
