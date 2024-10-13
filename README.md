@@ -1,6 +1,27 @@
 # macOS and OpenCore Quick Reference Guide
 These are some of my go-to macOS and OpenCore commands, guides, fixes and features I use from time to time in my environment. They act as my quick-reference guide and checklist whenever I need to do any updates, debugging or previous fixes and features I lost.
 
+### iCloud Drive activity
+<details>
+  <summary>Terminal commands to restart and monitor iCloud Drive.</summary>
+  <br>
+
+  **Terminate and restart the iCloud daemon**
+  ```
+  killall bird
+  ```
+  <br>
+
+  **Monitor the iCould syncronisation**
+  ```
+  brctl monitor -i
+  ```
+  <br>
+
+  <sup>***Reference: https://apple.stackexchange.com/questions/446479/icloud-sync-problems#answer-448505***</sup>
+  <br>
+</details>
+
 ### Updating OpenCore
 <details>
   <summary>Quick guide on how to update OpenCore.</summary>
